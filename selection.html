@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Selection</title>
+    
+</head>
+<body>
+    <h1>Selection</h1>
+    <form name="formGroup" id="formGroup" action="#" method="post" target="_self">
+    <table>
+        <tr>
+            <th>
+                
+                <input type="checkbox" id="c" onchange="selectChineseFood(this.form)">Chinese Food
+            </th>
+            <td>
+                <input type="checkbox" name = "c" id="c1" value = "Shuwei Restaurant 蜀味烤鱼"/>Shuwei Restaurant 蜀味烤鱼
+                <br/>
+                <input type="checkbox" name = "c" id="c2" value="La Maison Szechuan 蜀香居(Gatineau)">La Maison Szechuan 蜀香居(Gatineau)
+                <br/>
+                <input type="checkbox" name = "c" id="c3" value="Shanghai Wontons Noodle 上海馄饨">Shanghai Wontons Noodle 上海馄饨
+                <br/>
+                <input type="checkbox" name = "c" id="c4" value="Cafe Orient 金钟道茶餐厅">Cafe Orient 金钟道茶餐厅
+                <br/>
+                <input type="checkbox" name = "c" id="c5" value="Yang Sheng Chinese 羊城小馆">Yang Sheng Chinese 羊城小馆
+                <br/>
+                <input type="checkbox" name = "c" id="c6" value="Little Sheep Mongolian Hot Pot 小肥羊火锅">Little Sheep Mongolian Hot Pot 小肥羊火锅
+                <br/>
+                <input type="checkbox" name = "c" id="c7" value="Liuyishou Hotpot 留一手火锅">Liuyishou Hotpot 留一手火锅
+                <br/>
+                <input type="checkbox" name = "c" id="c8" value="Sea King Shark Fin Seafood Restaurant 海皇">Sea King Shark Fin Seafood Restaurant 海皇
+                <br/>
+                <input type="checkbox" name = "c" id="c9" value="BAIDU 千百度">BAIDU 千百度
+                <br/>
+                <input type="checkbox" name = "c" id="c10" value="Rice Pea Chinese Restaurant 米豆小馆">Rice Pea Chinese Restaurant 米豆小馆
+                <br/>
+                <input type="checkbox" name = "c" id="c11" value="Full House Asian Cuisine 客满餐馆">Full House Asian Cuisine 客满餐馆
+                <br/>
+                <input type="checkbox" name = "c" id="c12" value="渥村大排档">渥村大排档
+                <br/>
+                <input type="checkbox" name = "c" id="c13" value="Beijing Legend 四海一家">Beijing Legend 四海一家
+                <br/>
+                <input type="checkbox" name = "c" id="c14" value="Mandarin Restaurant">Mandarin Restaurant
+                <br/>
+                <input type="checkbox" name = "c" id="c15" value="Jadeland 翠林菜馆">Jadeland 翠林菜馆
+                
+            
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="v" onchange="selectVietnameseFood(this.form)">Vietnamese Food
+            </th>
+            <td>
+                <input type="checkbox" name="v" id="v1" value="Pho Bo Ga La (Somerset St.)">Pho Bo Ga La (Somerset St.)
+                <br/>
+                <input type="checkbox" name="v" id="v2" value="Merivale Noodle House 陈氏河粉">Merivale Noodle House 陈氏河粉
+            
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="j" onchange="selectJapaneseFood(this.form)">Japanese Food
+            </th>
+            <td>
+                <input type="checkbox" name="j" id="j1" value="Hokkaido Sushi">Hokkaido Sushi
+                <br/>
+                <input type="checkbox" name="j" id="j2" value="Sansotei Ramen">Sansotei Ramen
+                <br/>
+                <input type="checkbox" name="j" id="j3" value="Ten Sushi">Ten Sushi
+                <br/>
+                <input type="checkbox" name="j" id="j4" value="168 Sushi">168 Sushi
+            
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="k" onchange="selectKoreanFood(this.form)">Korean Food
+            </th>
+            <td>
+                <input type="checkbox" name="k" id="k1" value="Table 85th">Table 85th
+                <br/>
+                <input type="checkbox" name="k" id="k2" value="Alirang">Alirang
+                <br/>
+                <input type="checkbox" name="k" id="k3" value="Mu Goong Hwa Garden">Mu Goong Hwa Garden
+            
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="w" onchange="selectWesternFood(this.form)">Western-style Food
+            </th>
+            <td>
+                <input type="checkbox" name="w" id="w1" value="Eggspectation">Eggspectation
+                <br/>
+                <input type="checkbox" name="w" id="w2" value="Cora">Cora
+                <br/>
+                <input type="checkbox" name="w" id="w3" value="The Keg">The Keg
+                <br/>
+                <input type="checkbox" name="w" id="w4" value="Pelican Seafood Market and Grill">Pelican Seafood Market and Grill
+                <br/>
+                <input type="checkbox" name="w" id="w5" value="Swiss Chalet">Swiss Chalet
+                <br/>
+                <input type="checkbox" name="w" id="w6" value="Milestones Grill and Bar">Milestones Grill and Bar
+                <br/>
+                <input type="checkbox" name="w" id="w7" value="Lone Start Texas Grill">Lone Start Texas Grill
+                
+            
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="s" value="Snack" onchange="selectSnack(this.form)">Snack
+            </th>
+            <td>
+                <input type="checkbox" name="s" id="s1" value="McDonalds">McDonalds
+                <br/>
+                <input type="checkbox" name="s" id="s2" value="Tim Hortons">Tim Hortons
+                <br/>
+                <input type="checkbox" name="s" id="s3" value="Kentucky Fried Chicken">Kentucky Fried Chicken
+                <br/>
+                <input type="checkbox" name="s" id="s4" value="Popeyes">Popeyes
+                <br/>
+                <input type="checkbox" name="s" id="s5" value="IKEA">IKEA
+                <br/>
+                <input type="checkbox" name="s" id="s6" value="BeaverTails">BeaverTails
+                <br/>
+                <input type="checkbox" name="s" id="s7" value="Harvey's">Harvey's
+                <br/>
+                <input type="checkbox" name="s" id="s8" value="Pizza Pizza">Pizza Pizza
+                <br/>
+                <input type="checkbox" name="s" id="s9" value="Subway">Subway
+                <br/>
+                <input type="checkbox" name="s" id="s10" value="Thai Express">Thai Express
+                <br/>
+                <input type="checkbox" name="s" id="s11" value="Burger King">Burger King
+                <br/>
+                <input type="checkbox" name="s" id="s12" value="Whole Foods">Whole Foods
+                <br/>
+                <input type="checkbox" name="s" id="s13" value="Farm Boys">Farm Boys
+                <br/>
+                <input type="checkbox" name="s" id="s14" value="T & T">T & T
+                <br/>
+                <input type="checkbox" name="s" id="s15" value="Costco">Costco
+            
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="d" onchange="selectDessert(this.form)">Dessert Shop
+            </th>
+            <td>
+                <input type="checkbox" name="d" id="d1" value="Honey Town 满糖记">Honey Town 满糖记
+                <br/>
+                <input type="checkbox" name="d" id="d2" value="Sugar Marmalade 糖记">Sugar Marmalade 糖记
+                <br/>
+                <input type="checkbox" name="d" id="d3" value="Stella Luna Gelato Cafe">Stella Luna Gelato Cafe
+                <br/>
+                <input type="checkbox" name="d" id="d4" value="Uji Café 宇治カフェ">Uji Café 宇治カフェ
+            
+            </td>
+        </tr>
+        
+        
+        <tr>
+            <th>
+                <input type="button" value="Submit" id="btn_submit" onclick="submitSelection(this.form)">
+            </th>
+            <td>
+                <input type="button" value="Select All" id="btn_select" onclick="checkallbox(this.form)">
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+    <footer>
+        <p>&copy; <time datetime="2017">2017</time> <a href="http://www.algonquincollege.com/appliedresearch/" target="_blank">Applied Research and Innovation</a></p>
+    </footer>
+    <script src="selection.js" type="text/javascript"></script>
+</body>
+</html>
